@@ -1,0 +1,13 @@
+clinical-data-analysis-portfolio/
+│
+├── README.md
+├── data/
+│   └── clinical_trial_mock_data.csv
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_exploratory_analysis.ipynb
+│   ├── 03_statistical_analysis.ipynb
+│   └── 04_reporting.ipynb
+├── reports/
+│   └── Clinical_Data_Validation_Report.pdf
+└── requirements.txt
