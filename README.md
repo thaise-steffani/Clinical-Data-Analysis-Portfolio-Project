@@ -1,53 +1,36 @@
-# Clinical-Data-Analysis-Portfolio-Project
-This repository presents a portfolio project simulating the role of a data analyst in clinical data management.   It is based on a **mock Phase II clinical trial dataset** (treatment vs placebo group).  
+# Clinical Data Analysis Portfolio Project
 
-The goal is to demonstrate:
-- How to clean and validate clinical trial data.
-- How to anticipate and manage **protocol amendments**.
-- How to ensure **data integrity, auditability, and reproducibility**.
-- How to deliver actionable **statistical insights and professional reports** to clients.
+This repository demonstrates a **mock Phase II clinical trial data analysis**, showcasing skills relevant to **Customer Success Engineering** and clinical data management.
 
----
+## 📂 Project Contents
+- **clinical_trial_mock_data.csv** – Simulated dataset (Treatment vs Placebo group, demographics, outcomes, adverse events).  
+- **Clinical_Data_Analysis_Notebook.ipynb** – Python notebook with full data cleaning, validation, statistical analysis, and visualizations.  
+- **Clinical_Data_Validation_Report.pdf** – Professional-style PDF report summarizing data quality checks, validation tables, and visualizations.
 
-## 🔬 Project Workflow
-
-1. **Data Cleaning & Validation**  
-   - Handling missing values, duplicate entries, and protocol deviations.    
-
-2. **Exploratory Data Analysis (EDA)**  
-   - Patient demographics, treatment group balance, outcome distributions.  
-   - Visualizations in Python (matplotlib, seaborn, pandas).  
-
-3. **Statistical Analysis**  
-   - Comparison of treatment vs placebo outcomes.  
-   - Survival analysis & hypothesis testing.  
-
-4. **Reporting**  
-   - Professional report for stakeholders (PDF included in `/reports`).  
-   - Clear communication of results, methodology, and limitations.  
-
----
+## 🔬 Key Features
+- Data cleaning and validation following **EDC-style edit checks**:
+  - Missing severity
+  - Logical inconsistencies (e.g., male pregnancy)
+  - Invalid age or outcome values
+- Adverse event analysis by treatment arm
+- Statistical analysis and exploratory data visualization
+- Generation of professional report deliverable (PDF)
 
 ## 📊 Tools & Libraries
-- Python: pandas, numpy, matplotlib, seaborn, lifelines
-- R (optional): survival analysis, ggplot2
-- Report writing: reportlab, LaTeX-style formatting
+- Python: pandas, numpy, matplotlib, seaborn
+- PDF report: reportlab
+- Jupyter/Colab for interactive analysis
 
----
+## 🎯 Relevance to Customer Success Engineer Role
+This project simulates tasks you would perform in supporting clinical trials with a **CDMS/EDC platform**, including:  
+- Implementing and validating study protocols  
+- Ensuring data quality and auditability  
+- Communicating findings to clients in professional reports  
+- Providing actionable recommendations for data management  
 
-## 📂 Repository Structure
-- `data/` → Mock clinical trial dataset  
-- `notebooks/` → Jupyter notebooks with full analysis pipeline  
-- `reports/` → Final professional report (PDF)  
-- `requirements.txt` → Dependencies  
-
----
-
-## 🌍 Relevance to Data analyst Role
-This project reflects real tasks of a DA working with an **EDC/CDMS platform**:
-- Protocol interpretation and configuration.  
-- Data validation and cleaning.  
-- Statistical reporting for clients.  
-- Cross-functional communication with researchers, QA, and regulatory teams.  
-
----
+## 🔗 How to Use
+1. Open the notebook `Clinical_Data_Analysis_Notebook.ipynb` in Google Colab.  
+2. The dataset is loaded directly from GitHub:  
+   ```python
+   url = "https://raw.githubusercontent.com/thaise-steffani/Clinical-Data-Analysis-Portfolio-Project/main/clinical_trial_mock_data.csv"
+   df = pd.read_csv(url)
